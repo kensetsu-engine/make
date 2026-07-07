@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="theme.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="株式会社メイク">
+<meta property="og:title" content="工事を検討中の方へ｜株式会社メイク（狭山市）">
+<meta property="og:description" content="屋根・外壁の工事を検討中の方へ。ご相談の流れ・費用の考え方・よくある不安まで、はじめての方が安心して依頼できる情報をまとめました。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#fff;color:var(--c-ink);font-family:'Noto Sans JP',sans-serif;-webkit-font-smoothing:antialiased;}
+  a{color:var(--c-brand);text-decoration:none;}
+  a:hover{color:var(--c-ink);}
+  .rv,.rv-scale{opacity:0;transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);}
+  .rv{transform:translateY(40px);}.rv-scale{transform:scale(.96) translateY(20px);}
+  .rv.show,.rv-scale.show{opacity:1;transform:none;}
+  .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}.d4{transition-delay:.4s;}
+  @keyframes subheroZoom{from{transform:scale(1.12);}to{transform:scale(1.2);}}
+  @media (prefers-reduced-motion:reduce){.rv,.rv-scale{opacity:1!important;transform:none!important;transition:none!important;}[data-subhero-bg]{animation:none!important;transform:scale(1.12)!important;}html{scroll-behavior:auto;}}
+  [data-worry],[data-flow],[data-nav-cards]{grid-auto-rows:1fr;}
+  @media (max-width:860px){[data-worry]{grid-template-columns:1fr!important;}[data-flow]{grid-template-columns:1fr 1fr!important;}[data-nav-cards]{grid-template-columns:1fr!important;}}
+  @media (max-width:520px){[data-flow]{grid-template-columns:1fr!important;}}
+</style>
+</helmet>
+
+<div style="position:relative;overflow-x:clip;background:#fff;">
+
+  <dc-import name="Header" active="guide" hint-size="100%,0" style="position:absolute;top:0;left:0;width:100%;z-index:60;"></dc-import>
+
+  <!-- HERO -->
+  <section id="subhero" data-screen-label="検討中の方へHero" style="position:relative;height:clamp(360px,54vh,540px);overflow:hidden;background:#241f17;">
+    <div data-subhero-bg aria-hidden="true" style="position:absolute;inset:0;background:#241f17 url('assets/img/roof-wide-mountains.jpg') center/cover no-repeat;transform:scale(1.12);animation:subheroZoom 14s ease-in-out infinite alternate;will-change:transform;"></div>
+    <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(105deg,rgba(30,22,16,.84),rgba(30,22,16,.5));"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 clamp(24px,7vw,110px);max-width:1200px;margin:0 auto;">
+      <p class="rv d1" style="font-family:'Work Sans',sans-serif;font-size:clamp(11px,1.4vw,13px);letter-spacing:.3em;color:var(--c-brand-2);margin:0 0 20px;">GUIDE</p>
+      <h1 class="rv d2" style="font-family:'Noto Sans JP',sans-serif;font-weight:900;font-size:clamp(26px,4.6vw,46px);line-height:1.45;color:#fff;margin:0 0 20px;letter-spacing:.04em;text-shadow:0 2px 24px rgba(18,15,12,.5);text-wrap:balance;">工事を検討中の方へ</h1>
+      <p class="rv d3" style="font-size:clamp(14px,1.7vw,16px);line-height:2;color:rgba(255,255,255,.9);margin:0;max-width:600px;text-wrap:pretty;">はじめての工事は、わからないことばかりで不安なもの。ご相談の流れから費用の考え方まで、安心して進めていただくための情報をまとめました。<strong style="color:#fff;">お急ぎの場合も遠慮なくご連絡ください。</strong></p>
+    </div>
+    <div style="position:absolute;bottom:20px;left:0;right:0;text-align:center;"><span style="font-family:'Work Sans',sans-serif;font-size:11px;letter-spacing:.14em;color:rgba(255,255,255,.55);">HOME ／ 工事を検討中の方へ</span></div>
+  </section>
+
+  <!-- 共感リード -->
+  <section style="max-width:880px;margin:0 auto;padding:clamp(60px,9vh,110px) clamp(24px,5vw,40px) clamp(30px,5vh,50px);text-align:center;">
+    <p class="rv" style="font-family:'Work Sans',sans-serif;font-weight:600;font-size:11px;letter-spacing:.2em;color:var(--c-brand);margin:0 0 22px;">MESSAGE</p>
+    <h2 class="rv d1" style="font-size:clamp(21px,3vw,30px);font-weight:700;line-height:1.7;letter-spacing:.03em;margin:0 0 26px;text-wrap:balance;">「どこに頼めばいいのか、わからない」<br>——その最初の一歩を、一緒に。</h2>
+    <p class="rv d2" style="font-size:clamp(14px,1.6vw,15px);line-height:2.1;color:#555;margin:0;text-wrap:pretty;">屋根や外壁の工事は、一生に何度もあるものではありません。だからこそ、費用も、業者選びも、不安がつきものです。メイクは、いきなり契約をおすすめすることはありません。まずは現状を知るための無料点検から。ご納得いただいたうえで、必要な工事だけをご提案します。</p>
+  </section>
+
+  <!-- こんなお悩み -->
+  <section style="background:var(--c-cream-2);">
+    <div style="max-width:1100px;margin:0 auto;padding:clamp(56px,8vh,90px) clamp(24px,5vw,40px);">
+      <div class="rv" style="text-align:center;margin-bottom:clamp(30px,4vh,44px);"><p style="font-family:'Work Sans',sans-serif;font-weight:600;font-size:11px;letter-spacing:.2em;color:var(--c-brand);margin:0 0 12px;">WORRIES</p><h2 style="font-size:clamp(20px,2.6vw,28px);font-weight:900;letter-spacing:.03em;margin:0;">こんなお悩み、ありませんか？</h2></div>
+      <div data-worry style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:clamp(14px,2vw,20px);">
+        <div class="rv" style="background:#fff;border-radius:4px;padding:clamp(24px,3vw,32px);border-top:3px solid var(--c-brand);"><h3 style="font-size:16px;font-weight:700;margin:0 0 10px;">費用がいくらかかるか不安</h3><p style="font-size:13.5px;color:#777;line-height:1.9;margin:0;">工種ごとの費用の目安を料金表で公開。追加費用は事前合意なく発生しません。</p></div>
+        <div class="rv d1" style="background:#fff;border-radius:4px;padding:clamp(24px,3vw,32px);border-top:3px solid var(--c-brand);"><h3 style="font-size:16px;font-weight:700;margin:0 0 10px;">本当に工事が必要か判断できない</h3><p style="font-size:13.5px;color:#777;line-height:1.9;margin:0;">写真付きで現状をご説明。必要のない工事はおすすめしません。</p></div>
+        <div class="rv d2" style="background:#fff;border-radius:4px;padding:clamp(24px,3vw,32px);border-top:3px solid var(--c-brand);"><h3 style="font-size:16px;font-weight:700;margin:0 0 10px;">悪い業者に当たらないか心配</h3><p style="font-size:13.5px;color:#777;line-height:1.9;margin:0;">屋根工事は自社職人が直接施工。担当者が最後まで一貫して対応します。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ご相談の流れ -->
+  <section style="max-width:1160px;margin:0 auto;padding:clamp(56px,8vh,96px) clamp(24px,5vw,40px);">
+    <div class="rv" style="text-align:center;margin-bottom:clamp(32px,4.5vh,48px);"><p style="font-family:'Work Sans',sans-serif;font-weight:600;font-size:11px;letter-spacing:.2em;color:var(--c-brand);margin:0 0 12px;">FLOW</p><h2 style="font-size:clamp(20px,2.6vw,28px);font-weight:900;letter-spacing:.03em;margin:0;">ご相談から工事完了までの流れ</h2></div>
+    <div data-flow style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,2vw,18px);">
+      <div class="rv" style="background:var(--c-cream-2);border-radius:4px;padding:clamp(22px,2.5vw,28px);"><span style="font-family:'Oswald',sans-serif;font-size:34px;color:var(--c-brand);line-height:.9;">01</span><h3 style="font-size:15.5px;font-weight:700;margin:12px 0 8px;">お問い合わせ</h3><p style="font-size:13px;color:#777;line-height:1.85;margin:0;">お電話・フォームよりお気軽にご連絡ください。</p></div>
+      <div class="rv d1" style="background:var(--c-cream-2);border-radius:4px;padding:clamp(22px,2.5vw,28px);"><span style="font-family:'Oswald',sans-serif;font-size:34px;color:var(--c-brand);line-height:.9;">02</span><h3 style="font-size:15.5px;font-weight:700;margin:12px 0 8px;">無料点検・現地調査</h3><p style="font-size:13px;color:#777;line-height:1.85;margin:0;">屋根・外壁の状態を確認し、写真で記録します。</p></div>
+      <div class="rv d2" style="background:var(--c-cream-2);border-radius:4px;padding:clamp(22px,2.5vw,28px);"><span style="font-family:'Oswald',sans-serif;font-size:34px;color:var(--c-brand);line-height:.9;">03</span><h3 style="font-size:15.5px;font-weight:700;margin:12px 0 8px;">お見積り・ご提案</h3><p style="font-size:13px;color:#777;line-height:1.85;margin:0;">項目別の明細でわかりやすくご提示します。</p></div>
+      <div class="rv d3" style="background:var(--c-cream-2);border-radius:4px;padding:clamp(22px,2.5vw,28px);"><span style="font-family:'Oswald',sans-serif;font-size:34px;color:var(--c-brand);line-height:.9;">04</span><h3 style="font-size:15.5px;font-weight:700;margin:12px 0 8px;">施工・お引き渡し</h3><p style="font-size:13px;color:#777;line-height:1.85;margin:0;">自社職人が丁寧に施工。完了後も定期点検で対応。</p></div>
+    </div>
+    <p class="rv" style="text-align:center;font-size:13.5px;color:#666;margin:24px 0 0;">点検・現地調査・お見積りは<strong style="color:var(--c-brand);">無料</strong>です。ご相談だけでもお気軽にどうぞ。</p>
+  </section>
+
+  <!-- 目的別リンク -->
+  <section style="background:var(--c-ink);">
+    <div style="max-width:1160px;margin:0 auto;padding:clamp(56px,8vh,96px) clamp(24px,5vw,40px);">
+      <div class="rv" style="text-align:center;margin-bottom:clamp(30px,4vh,44px);"><p style="font-family:'Work Sans',sans-serif;font-weight:600;font-size:11px;letter-spacing:.2em;color:var(--c-brand-2);margin:0 0 12px;">NEXT STEP</p><h2 style="font-size:clamp(20px,2.6vw,28px);font-weight:900;color:#fff;letter-spacing:.03em;margin:0;">目的に合わせて、詳しくご覧ください</h2></div>
+      <div data-nav-cards style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,20px);">
+        <a href="屋根工事.dc.html" class="rv" style="display:block;position:relative;overflow:hidden;border-radius:4px;aspect-ratio:5/3;"><div style="position:absolute;inset:0;background:#e3e1da url('assets/img/after-metal-roof.jpg') center/cover no-repeat;"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,24,18,.2) 30%,rgba(30,24,18,.85) 100%);"></div><div style="position:absolute;left:22px;right:22px;bottom:20px;"><p style="font-family:'Work Sans',sans-serif;font-size:10px;letter-spacing:.16em;color:var(--c-brand-2);margin:0 0 8px;">ROOF</p><p style="font-size:18px;font-weight:700;color:#fff;margin:0;display:flex;align-items:center;gap:8px;">屋根工事について <span>→</span></p></div></a>
+        <a href="料金表.dc.html" class="rv d1" style="display:block;position:relative;overflow:hidden;border-radius:4px;aspect-ratio:5/3;"><div style="position:absolute;inset:0;background:#e3e1da url('assets/img/process-decking.jpg') center/cover no-repeat;"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,24,18,.2) 30%,rgba(30,24,18,.85) 100%);"></div><div style="position:absolute;left:22px;right:22px;bottom:20px;"><p style="font-family:'Work Sans',sans-serif;font-size:10px;letter-spacing:.16em;color:var(--c-brand-2);margin:0 0 8px;">PRICE</p><p style="font-size:18px;font-weight:700;color:#fff;margin:0;display:flex;align-items:center;gap:8px;">料金表を見る <span>→</span></p></div></a>
+        <a href="施工実績.dc.html" class="rv d2" style="display:block;position:relative;overflow:hidden;border-radius:4px;aspect-ratio:5/3;"><div style="position:absolute;inset:0;background:#e3e1da url('assets/img/roof-finished-shingle.jpg') center/cover no-repeat;"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,24,18,.2) 30%,rgba(30,24,18,.85) 100%);"></div><div style="position:absolute;left:22px;right:22px;bottom:20px;"><p style="font-family:'Work Sans',sans-serif;font-size:10px;letter-spacing:.16em;color:var(--c-brand-2);margin:0 0 8px;">WORKS</p><p style="font-size:18px;font-weight:700;color:#fff;margin:0;display:flex;align-items:center;gap:8px;">施工実績・お客様の声 <span>→</span></p></div></a>
+        <a href="他社との違い.dc.html" class="rv" style="display:block;position:relative;overflow:hidden;border-radius:4px;aspect-ratio:5/3;"><div style="position:absolute;inset:0;background:#e3e1da url('assets/img/process-underlay.jpg') center/cover no-repeat;"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,24,18,.2) 30%,rgba(30,24,18,.85) 100%);"></div><div style="position:absolute;left:22px;right:22px;bottom:20px;"><p style="font-family:'Work Sans',sans-serif;font-size:10px;letter-spacing:.16em;color:var(--c-brand-2);margin:0 0 8px;">REASON</p><p style="font-size:18px;font-weight:700;color:#fff;margin:0;display:flex;align-items:center;gap:8px;">他社との違い <span>→</span></p></div></a>
+        <a href="会社概要.dc.html" class="rv d1" style="display:block;position:relative;overflow:hidden;border-radius:4px;aspect-ratio:5/3;"><div style="position:absolute;inset:0;background:#e3e1da url('assets/img/roof-wide-mountains.jpg') center/cover no-repeat;"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,24,18,.2) 30%,rgba(30,24,18,.85) 100%);"></div><div style="position:absolute;left:22px;right:22px;bottom:20px;"><p style="font-family:'Work Sans',sans-serif;font-size:10px;letter-spacing:.16em;color:var(--c-brand-2);margin:0 0 8px;">COMPANY</p><p style="font-size:18px;font-weight:700;color:#fff;margin:0;display:flex;align-items:center;gap:8px;">会社概要 <span>→</span></p></div></a>
+        <a href="よくあるご質問.dc.html" class="rv d2" style="display:block;position:relative;overflow:hidden;border-radius:4px;aspect-ratio:5/3;"><div style="position:absolute;inset:0;background:#e3e1da url('assets/img/gutter-install.jpg') center/cover no-repeat;"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,24,18,.2) 30%,rgba(30,24,18,.85) 100%);"></div><div style="position:absolute;left:22px;right:22px;bottom:20px;"><p style="font-family:'Work Sans',sans-serif;font-size:10px;letter-spacing:.16em;color:var(--c-brand-2);margin:0 0 8px;">FAQ</p><p style="font-size:18px;font-weight:700;color:#fff;margin:0;display:flex;align-items:center;gap:8px;">よくあるご質問 <span>→</span></p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:var(--c-brand);">
+    <div class="rv" style="max-width:900px;margin:0 auto;padding:clamp(56px,8vh,100px) clamp(24px,5vw,40px);text-align:center;">
+      <h2 style="font-size:clamp(22px,3vw,30px);font-weight:900;color:#fff;margin:0 0 16px;letter-spacing:.03em;line-height:1.5;text-wrap:balance;">まずは、話を聞くだけでも大丈夫です。</h2>
+      <p style="font-size:14px;color:rgba(255,255,255,.9);margin:0 0 34px;line-height:2;">「見てもらうだけ」「見積りだけ」でも大歓迎。お急ぎの場合も遠慮なくご連絡ください。</p>
+      <div style="display:inline-flex;gap:16px;flex-wrap:wrap;justify-content:center;">
+        <a href="お問い合わせ.dc.html" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--c-brand);font-weight:700;font-size:15px;letter-spacing:.04em;padding:16px 40px;min-width:240px;justify-content:center;box-shadow:0 10px 30px rgba(20,16,10,.25);">無料点検・お問い合わせ</a>
+        <a href="tel:04-2936-8791" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:#fff;font-family:'Work Sans',sans-serif;font-weight:600;font-size:16px;letter-spacing:.08em;padding:16px 30px;border:1px solid rgba(255,255,255,.6);min-width:240px;justify-content:center;">04-2936-8791</a>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="Footer" contact="true" hint-size="100%,520px"></dc-import>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('show'); io.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.rv,.rv-scale').forEach((el) => io.observe(el));
+  }
+}
+</script>
+</body>
+</html>

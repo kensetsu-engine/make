@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="theme.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="株式会社メイク">
+<meta property="og:title" content="他社との違い｜株式会社メイク（狭山市）">
+<meta property="og:description" content="屋根工事は自社職人が直接施工。写真付きの明朗見積もり・担当者一貫対応・保証と定期点検。メイクが選ばれる理由をご紹介します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#fff;color:var(--c-ink);font-family:'Noto Sans JP',sans-serif;-webkit-font-smoothing:antialiased;}
+  a{color:var(--c-brand);text-decoration:none;}
+  a:hover{color:var(--c-ink);}
+  .rv{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);}
+  .rv.show{opacity:1;transform:none;}
+  .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
+  @keyframes subheroZoom{from{transform:scale(1.12);}to{transform:scale(1.2);}}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important;transition:none!important;}[data-subhero-bg]{animation:none!important;transform:scale(1.12)!important;}html{scroll-behavior:auto;}}
+  table.cmp{width:100%;border-collapse:collapse;}
+  table.cmp th,table.cmp td{border:1px solid var(--c-cream);padding:14px 16px;font-size:14px;line-height:1.7;vertical-align:top;text-align:left;}
+  table.cmp thead th{background:var(--c-ink);color:#fff;font-weight:700;text-align:center;}
+  table.cmp thead th.make{background:var(--c-brand);}
+  table.cmp td.item{font-weight:700;background:var(--c-cream-2);width:24%;}
+  table.cmp td.make{color:var(--c-ink);}
+  table.cmp td.make b{color:var(--c-brand);}
+  table.cmp td.other{color:#8a7f70;}
+  [data-scroll-wrap]{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  [data-reasons]{grid-auto-rows:1fr;}
+  @media (max-width:640px){ table.cmp{min-width:600px;} [data-reasons]{grid-template-columns:1fr!important;} }
+</style>
+</helmet>
+
+<div style="position:relative;overflow-x:clip;background:#fff;">
+
+  <dc-import name="Header" active="about" hint-size="100%,0" style="position:absolute;top:0;left:0;width:100%;z-index:60;"></dc-import>
+
+  <!-- HERO -->
+  <section id="subhero" data-screen-label="他社との違いHero" style="position:relative;height:clamp(340px,50vh,500px);overflow:hidden;background:#241f17;">
+    <div data-subhero-bg aria-hidden="true" style="position:absolute;inset:0;background:#241f17 url('assets/img/process-underlay.jpg') center/cover no-repeat;transform:scale(1.12);animation:subheroZoom 14s ease-in-out infinite alternate;will-change:transform;"></div>
+    <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(30,24,18,.5) 0%,rgba(30,24,18,.82) 100%);"></div>
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 24px;">
+      <p class="rv" style="font-family:'Work Sans',sans-serif;font-size:clamp(11px,1.4vw,13px);letter-spacing:.32em;color:var(--c-brand-2);margin:0 0 20px;">OUR REASON</p>
+      <h1 class="rv d1" style="font-family:'Noto Sans JP',sans-serif;font-weight:900;font-size:clamp(24px,4vw,42px);color:#fff;margin:0 0 20px;letter-spacing:.04em;text-shadow:0 2px 24px rgba(18,15,12,.5);text-wrap:balance;">メイクが選ばれる理由</h1>
+      <span class="rv d2" style="width:64px;height:3px;background:linear-gradient(90deg,var(--c-brand-2),var(--c-brand));display:inline-block;"></span>
+    </div>
+    <div style="position:absolute;bottom:20px;left:0;right:0;text-align:center;"><span style="font-family:'Work Sans',sans-serif;font-size:11px;letter-spacing:.14em;color:rgba(255,255,255,.55);">HOME ／ 他社との違い</span></div>
+  </section>
+
+  <!-- 共感リード -->
+  <section style="max-width:880px;margin:0 auto;padding:clamp(56px,8vh,96px) clamp(24px,5vw,40px) clamp(24px,4vh,40px);text-align:center;">
+    <h2 class="rv" style="font-size:clamp(21px,3vw,30px);font-weight:700;line-height:1.7;margin:0 0 24px;letter-spacing:.02em;text-wrap:balance;">安さだけで選ばないでください。<br>後悔しないために、知ってほしいこと。</h2>
+    <p class="rv d1" style="font-size:clamp(14px,1.6vw,15px);line-height:2.1;color:#555;margin:0;text-wrap:pretty;">「格安！」と書いてあったのに見積もりが高かった、担当者がころころ変わった、工事が終わったら連絡が取れなくなった——。業者選びで、そんな経験はありませんか。メイクは、選んでよかったと思っていただける仕事だけをしています。</p>
+  </section>
+
+  <!-- 比較表 -->
+  <section style="max-width:1080px;margin:0 auto;padding:clamp(30px,5vh,50px) clamp(24px,5vw,40px);">
+    <div class="rv" data-scroll-wrap>
+      <table class="cmp">
+        <thead><tr><th style="text-align:left;">比較項目</th><th class="make">株式会社メイク</th><th>一般の業者・大手</th></tr></thead>
+        <tbody>
+          <tr><td class="item">屋根工事の施工体制</td><td class="make"><b>✓</b> 自社職人が直接屋根に登り施工</td><td class="other">△ 現場を確認せず見積もりを出すケースも</td></tr>
+          <tr><td class="item">見積もりの透明性</td><td class="make"><b>✓</b> 現地写真付き・項目別明細を完全開示</td><td class="other">△ 一括表記で内訳が不明な場合あり</td></tr>
+          <tr><td class="item">追加費用</td><td class="make"><b>✓</b> 事前合意なき追加費用は発生しない</td><td class="other">✗ 着工後に「追加が必要」と言われるケースも</td></tr>
+          <tr><td class="item">担当者の一貫性</td><td class="make"><b>✓</b> 初回相談〜完工まで同じ担当者が対応</td><td class="other">△ 営業・工事・アフターで担当が変わる</td></tr>
+          <tr><td class="item">アフターフォロー</td><td class="make"><b>✓</b> 保証書発行＋施工後の定期点検あり</td><td class="other">△ 工事完了後に連絡が取りにくくなる事例も</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="rv" style="font-size:12.5px;color:#8a7f70;margin:14px 0 0;line-height:1.8;">※ 「屋根工事」における自社職人の直接施工を強みとしてご紹介しています。内容は一般的な比較イメージです（参考表示）。</p>
+  </section>
+
+  <!-- 選ばれる理由 -->
+  <section style="background:var(--c-cream-2);">
+    <div style="max-width:1160px;margin:0 auto;padding:clamp(56px,8vh,96px) clamp(24px,5vw,40px);">
+      <div class="rv" style="text-align:center;margin-bottom:clamp(32px,4.5vh,48px);"><p style="font-family:'Work Sans',sans-serif;font-weight:600;font-size:11px;letter-spacing:.2em;color:var(--c-brand);margin:0 0 12px;">5 REASONS</p><h2 style="font-size:clamp(20px,2.6vw,28px);font-weight:900;letter-spacing:.03em;margin:0;">メイクが選ばれる5つの理由</h2></div>
+      <div data-reasons style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,20px);">
+        <div class="rv" style="background:#fff;border-radius:4px;padding:clamp(24px,3vw,32px);display:flex;gap:18px;"><span style="font-family:'Oswald',sans-serif;font-size:38px;color:var(--c-brand);line-height:.9;flex:none;">01</span><div><h3 style="font-size:16.5px;font-weight:700;margin:0 0 8px;">屋根工事は自社職人が直接施工</h3><p style="font-size:13.5px;color:#777;line-height:1.9;margin:0;">屋根に登り状態を確認したうえで施工。中間マージンがないぶん、価格にも品質にも還元できます。</p></div></div>
+        <div class="rv d1" style="background:#fff;border-radius:4px;padding:clamp(24px,3vw,32px);display:flex;gap:18px;"><span style="font-family:'Oswald',sans-serif;font-size:38px;color:var(--c-brand);line-height:.9;flex:none;">02</span><div><h3 style="font-size:16.5px;font-weight:700;margin:0 0 8px;">業界歴15年の代表と熟練の職人</h3><p style="font-size:13.5px;color:#777;line-height:1.9;margin:0;">数多くの屋根・外壁と向き合ってきた経験。難しい現場ほど、技術が活きます。</p></div></div>
+        <div class="rv d2" style="background:#fff;border-radius:4px;padding:clamp(24px,3vw,32px);display:flex;gap:18px;"><span style="font-family:'Oswald',sans-serif;font-size:38px;color:var(--c-brand);line-height:.9;flex:none;">03</span><div><h3 style="font-size:16.5px;font-weight:700;margin:0 0 8px;">写真付き・明朗なお見積もり</h3><p style="font-size:13.5px;color:#777;line-height:1.9;margin:0;">どこがどう劣化しているか、なぜその工事が必要かを、写真で一つひとつご説明します。</p></div></div>
+        <div class="rv d3" style="background:#fff;border-radius:4px;padding:clamp(24px,3vw,32px);display:flex;gap:18px;"><span style="font-family:'Oswald',sans-serif;font-size:38px;color:var(--c-brand);line-height:.9;flex:none;">04</span><div><h3 style="font-size:16.5px;font-weight:700;margin:0 0 8px;">軽いフットワークで関東一円</h3><p style="font-size:13.5px;color:#777;line-height:1.9;margin:0;">狭山市・川越市を中心に、埼玉県・東京都をはじめ関東一円へ。急ぎのご相談にも迅速対応。</p></div></div>
+        <div class="rv" style="background:#fff;border-radius:4px;padding:clamp(24px,3vw,32px);display:flex;gap:18px;grid-column:1 / -1;"><span style="font-family:'Oswald',sans-serif;font-size:38px;color:var(--c-brand);line-height:.9;flex:none;">05</span><div><h3 style="font-size:16.5px;font-weight:700;margin:0 0 8px;">工事後も、長く付き合える</h3><p style="font-size:13.5px;color:#777;line-height:1.9;margin:0;">保証書の発行と定期点検で、施工後も安心。住みよいおうちのパートナーとして寄り添います。</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:var(--c-brand);">
+    <div class="rv" style="max-width:900px;margin:0 auto;padding:clamp(52px,7vh,90px) clamp(24px,5vw,40px);text-align:center;">
+      <h2 style="font-size:clamp(20px,2.8vw,30px);font-weight:900;color:#fff;margin:0 0 16px;letter-spacing:.03em;line-height:1.5;text-wrap:balance;">まずは、話を聞きに来ませんか。</h2>
+      <p style="font-size:14px;color:rgba(255,255,255,.9);margin:0 0 32px;line-height:2;">点検・お見積りは無料。しつこい営業はいたしません。</p>
+      <div style="display:inline-flex;gap:16px;flex-wrap:wrap;justify-content:center;">
+        <a href="お問い合わせ.dc.html" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--c-brand);font-weight:700;font-size:15px;padding:16px 40px;min-width:240px;justify-content:center;box-shadow:0 10px 30px rgba(20,16,10,.25);">無料点検・お問い合わせ</a>
+        <a href="tel:04-2936-8791" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:#fff;font-family:'Work Sans',sans-serif;font-weight:600;font-size:16px;letter-spacing:.08em;padding:16px 30px;border:1px solid rgba(255,255,255,.6);min-width:240px;justify-content:center;">04-2936-8791</a>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="Footer" contact="true" hint-size="100%,520px"></dc-import>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('show'); io.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.rv').forEach((el) => io.observe(el));
+  }
+}
+</script>
+</body>
+</html>
